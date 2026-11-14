@@ -1,0 +1,264 @@
+"""Script to verify and generate benchmark and manifest files."""
+import json
+from pathlib import Path
+
+# Load extracted pages
+pages_file = Path("starter/data/extracted_pages.json")
+if not pages_file.exists():
+    raise FileNotFoundError("Run extraction first")
+
+with open(pages_file, "r", encoding="utf-8") as f:
+    pages = json.load(f)
+
+# Define 20 benchmark questions (15 dev, 5 test)
+benchmark_data = [
+    # Dev: 15 questions (q01 - q15)
+    {
+        "id": "q01",
+        "split": "dev",
+        "type": "truc_tiep",
+        "question": "Khái niệm Machine Learning (Học máy) được định nghĩa như thế nào?",
+        "expected_answer": "Machine Learning là một nhánh của trí tuệ nhân tạo cho phép máy tính học từ dữ liệu và cải thiện hiệu suất theo thời gian mà không cần lập trình chi tiết cho từng nhiệm vụ cụ thể.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 2,
+        "evidence_quote": "Machine Learning (ML) là một nhánh của trí tuệ nhân tạo cho phép máy tính học \ntừ dữ liệu và cải thiện hiệu suất theo thời gian mà không cần lập trình chi tiết cho \ntừng nhiệm vụ cụ thể.",
+        "filter": None
+    },
+    {
+        "id": "q02",
+        "split": "dev",
+        "type": "truc_tiep",
+        "question": "Mô hình Recurrent Neural Network (RNN) được thiết kế chuyên biệt để xử lý dạng dữ liệu nào?",
+        "expected_answer": "RNN được thiết kế để xử lý dữ liệu chuỗi như văn bản, âm thanh và dữ liệu thời gian.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 4,
+        "evidence_quote": "Recurrent Neural Network là mô hình mạng nơ-ron được thiết kế để xử lý dữ liệu \nchuỗi như văn bản, âm thanh và dữ liệu thời gian.",
+        "filter": None
+    },
+    {
+        "id": "q03",
+        "split": "dev",
+        "type": "truc_tiep",
+        "question": "Trong bài toán thị giác máy tính, phân loại ảnh (Image Classification) có nhiệm vụ gì?",
+        "expected_answer": "Xác định đối tượng chính trong ảnh là gì.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 6,
+        "evidence_quote": "- Phân loại ảnh (Image Classification): Xác định đối tượng chính trong ảnh \nlà gì.",
+        "filter": None
+    },
+    {
+        "id": "q04",
+        "split": "dev",
+        "type": "truc_tiep",
+        "question": "Hàm kích hoạt phổ biến nào trong CNN giúp tăng tốc độ huấn luyện và cải thiện hiệu suất của mạng?",
+        "expected_answer": "Hàm ReLU (Rectified Linear Unit).",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 8,
+        "evidence_quote": "Một hàm kích hoạt phổ biến trong CNN là \nReLU (Rectified Linear Unit), giúp tăng tốc độ huấn luyện và cải thiện hiệu suất \ncủa mạng.",
+        "filter": None
+    },
+    {
+        "id": "q05",
+        "split": "dev",
+        "type": "truc_tiep",
+        "question": "Trong lớp tích chập, tham số Stride (Bước trượt) là gì và Stride lớn hơn 1 có tác dụng gì?",
+        "expected_answer": "Stride là khoảng cách di chuyển của kernel sau mỗi phép tính; Stride > 1 giúp giảm kích thước không gian của bản đồ đặc trưng.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 9,
+        "evidence_quote": "• Stride (Bước trượt): Khoảng cách di chuyển của kernel sau mỗi phép tính. \nStride >1 giúp gi ảm kích thước không gian của bản đồ đặc trưng (feature \nmap).",
+        "filter": None
+    },
+    {
+        "id": "q06",
+        "split": "dev",
+        "type": "dieu_kien_ngoai_le",
+        "question": "Hàm kích hoạt ReLU xử lý giá trị đầu vào nhỏ hơn hoặc bằng 0 như thế nào?",
+        "expected_answer": "Nếu giá trị đầu vào nhỏ hơn hoặc bằng 0 thì kết quả bằng 0.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 10,
+        "evidence_quote": "• Nếu giá trị đầu vào nhỏ hơn hoặc bằng 0 thì kết quả bằng 0.",
+        "filter": None
+    },
+    {
+        "id": "q07",
+        "split": "dev",
+        "type": "dien_dat_lai",
+        "question": "Hàm kích hoạt Tanh có thể gặp phải vấn đề nghiêm trọng gì khi cấu trúc mạng quá sâu?",
+        "expected_answer": "Gặp vấn đề vanishing gradient (biến mất gradient) giống như hàm Sigmoid.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 11,
+        "evidence_quote": "Tuy nhiên, giống như Sigmoid, hàm Tanh cũng có thể gặp vấn đề vanishing \ngradient khi mạng quá sâu.",
+        "filter": None
+    },
+    {
+        "id": "q08",
+        "split": "dev",
+        "type": "truc_tiep",
+        "question": "Điểm khác biệt cơ bản giữa lớp Pooling và lớp Convolution về mặt tham số là gì?",
+        "expected_answer": "Lớp Pooling không có tham số để học trong quá trình huấn luyện.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 21,
+        "evidence_quote": "Mặc dù các l ớp này không có tham s ố để học, chúng vẫn phải tham gia vào \nquá trình lan truyền ngược để định hướng dòng chảy của gradient.",
+        "filter": None
+    },
+    {
+        "id": "q09",
+        "split": "dev",
+        "type": "truc_tiep",
+        "question": "Công thức tính toán đầu ra của một neuron trong lớp Fully Connected là gì?",
+        "expected_answer": "y = f(Wx + b), trong đó W là ma trận trọng số, x là vector đặc trưng đầu vào, b là bias.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 17,
+        "evidence_quote": "Mỗi neuron trong lớp FC tính toán đầu ra theo công thức: \ny = f(Wx + b)",
+        "filter": None
+    },
+    {
+        "id": "q10",
+        "split": "dev",
+        "type": "dien_dat_lai",
+        "question": "Nhược điểm lớn nhất của lớp Fully Connected là gì?",
+        "expected_answer": "Số lượng tham số rất lớn, dễ gây overfitting và tốn bộ nhớ cũng như thời gian huấn luyện.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 17,
+        "evidence_quote": "3.5.3.Nhược điểm của Fully Connected \n• Số lượng tham số rất lớn, dễ gây overfitting. \n• Tốn bộ nhớ và thời gian huấn luyện.",
+        "filter": None
+    },
+    {
+        "id": "q11",
+        "split": "dev",
+        "type": "truc_tiep",
+        "question": "Thuật toán lan truyền ngược (Backpropagation) dựa trên nguyên lý toán học nào từ giải tích để tính đạo hàm riêng?",
+        "expected_answer": "Ứng dụng có hệ thống của quy tắc chuỗi (chain rule).",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 18,
+        "evidence_quote": "Về bản chất, đây là một ứng dụng có hệ thống của quy tắc \nchuỗi (chain rule) t ừ giải tích để tính toán độ dốc (đạo hàm riêng)",
+        "filter": None
+    },
+    {
+        "id": "q12",
+        "split": "dev",
+        "type": "dieu_kien_ngoai_le",
+        "question": "Hiện tượng Vanishing Gradient xảy ra trong điều kiện nào khi nhân liên tiếp các đạo hàm qua nhiều lớp?",
+        "expected_answer": "Gradient tiến về 0 khi trị tuyệt đối của đạo hàm nhỏ hơn 1.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 25,
+        "evidence_quote": "• Vanishing Gradient (Bi ến mất): Gradient ti ến về 0 (khi tr ị tuyệt đối đạo \nhàm < 1), khiến các lớp đầu ngừng học.",
+        "filter": None
+    },
+    {
+        "id": "q13",
+        "split": "dev",
+        "type": "metadata_filter",
+        "question": "Trong Chương 3 về kiến trúc mô hình, thuật toán tối ưu Adam tích hợp cơ chế nào để bù đắp việc khởi tạo moment bằng 0?",
+        "expected_answer": "Cơ chế hiệu chỉnh độ lệch (bias correction).",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 23,
+        "evidence_quote": "Công th ức c ập nh ật c ủa Adam tích h ợp cơ ch ế hiệu ch ỉnh đ ộ lệch (bias \ncorrection) để bù đắp cho vi ệc khởi tạo các moment b ằng 0",
+        "filter": {"chapter": "chuong_3"}
+    },
+    {
+        "id": "q14",
+        "split": "dev",
+        "type": "metadata_filter",
+        "question": "Trong Chương 4 về các kiến trúc nổi tiếng, mô hình AlexNet được đề xuất bởi những tác giả nào?",
+        "expected_answer": "Alex Krizhevsky, Ilya Sutskever và Geoffrey Hinton.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 27,
+        "evidence_quote": "Mô \nhình này được đề xuất bởi Alex Krizhevsky, Ilya Sutskever và Geoffrey Hinton",
+        "filter": {"chapter": "chuong_4"}
+    },
+    {
+        "id": "q15",
+        "split": "dev",
+        "type": "truc_tiep",
+        "question": "Mô hình VGGNet sử dụng kích thước bộ lọc (filter/kernel) nào làm đặc trưng nổi bật?",
+        "expected_answer": "Sử dụng các bộ lọc kích thước nhỏ (3×3) nhưng tăng số lượng lớp mạng lên rất sâu.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 27,
+        "evidence_quote": "Điểm đặc biệt của VGGNet là s ử dụng các bộ lọc kích thư ớc nhỏ (3×3) \nnhưng tăng số lượng lớp mạng lên rất sâu.",
+        "filter": None
+    },
+    # Test: 5 questions (q16 - q20)
+    {
+        "id": "q16",
+        "split": "test",
+        "type": "truc_tiep",
+        "question": "Kiến trúc ResNet sử dụng giải pháp kỹ thuật nào để thông tin truyền qua nhiều lớp mà không bị suy giảm?",
+        "expected_answer": "Sử dụng skip connection (kết nối tắt).",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 28,
+        "evidence_quote": "Kiến trúc ResNet sử dụng skip connection (kết nối tắt), cho phép tín hiệu đi \nqua nhiều lớp mà không bị suy giảm.",
+        "filter": None
+    },
+    {
+        "id": "q17",
+        "split": "test",
+        "type": "metadata_filter",
+        "question": "Trong Chương 4, mô hình GoogLeNet (Inception) được giới thiệu vào năm nào và bởi ai?",
+        "expected_answer": "Được giới thiệu bởi Christian Szegedy và cộng sự vào năm 2015 trong nghiên cứu Going Deeper with Convolutions.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 28,
+        "evidence_quote": "GoogLeNet (Inception) được giới thiệu bởi Christian Szegedy và cộng sự vào \nnăm 2015 trong nghiên cứu Going Deeper with Convolutions.",
+        "filter": {"chapter": "chuong_4"}
+    },
+    {
+        "id": "q18",
+        "split": "test",
+        "type": "dieu_kien_ngoai_le",
+        "question": "Trong cơ chế lan truyền ngược của lớp Max Pooling, gradient được truyền như thế nào?",
+        "expected_answer": "Gradient được truyền 100% về vị trí của giá trị lớn nhất đã chọn; các vị trí khác nhận gradient bằng 0.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 21,
+        "evidence_quote": "Gradient được truyền 100% v ề \nvị trí của giá tr ị lớn nhất đã ch ọn; \ncác vị trí khác nhận gradient bằng 0.",
+        "filter": None
+    },
+    {
+        "id": "q19",
+        "split": "test",
+        "type": "dien_dat_lai",
+        "question": "Ưu điểm quan trọng của CNN so với các phương pháp truyền thống trong việc trích xuất đặc trưng là gì?",
+        "expected_answer": "CNN có khả năng tự động học và trích xuất các đặc trưng quan trọng từ dữ liệu thông qua các lớp tích chập mà không cần thiết kế đặc trưng thủ công.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 29,
+        "evidence_quote": "Thứ nhất, khả năng tự động trích xu ất đặc trưng t ừ dữ liệu. Khác với các \nphương pháp truyền thống yêu cầu người dùng phải thiết kế đặc trưng thủ công, \nCNN có khả năng tự động học và trích xuất các đặc trưng quan trọng từ dữ liệu \nthông qua các lớp tích chập.",
+        "filter": None
+    },
+    {
+        "id": "q20",
+        "split": "test",
+        "type": "dieu_kien_ngoai_le",
+        "question": "Tính chất 'hộp đen' (Black Box) của CNN gây ra trở ngại gì trong việc giải thích quyết định?",
+        "expected_answer": "Rất khó để giải thích chính xác cách mà mô hình đưa ra quyết định, gây khó khăn trong y tế hoặc tài chính.",
+        "gold_source_id": "bao-cao-cnn",
+        "gold_page": 30,
+        "evidence_quote": "Thứ ba, khó giải thích mô hình. CNN thường được xem là một “hộp đen” vì \nrất khó để giải thích chính xác cách mà mô hình đưa ra quy ết định.",
+        "filter": None
+    }
+]
+
+# Verify all quotes
+print("=== VERIFYING EVIDENCE QUOTES ===")
+errors = 0
+for item in benchmark_data:
+    page_str = str(item["gold_page"])
+    page_text = pages.get(page_str, "")
+    quote = item["evidence_quote"]
+    if quote not in page_text:
+        print(f"[FAIL] {item['id']} - Page {page_str}: quote not found!")
+        errors += 1
+    else:
+        print(f"[PASS] {item['id']} - Page {page_str}: verified OK")
+
+if errors == 0:
+    print("\nALL 20 QUESTIONS VERIFIED 100% MATCH WITH SOURCE PDF!")
+    
+    # Ensure benchmark directory exists
+    bench_dir = Path("benchmark")
+    bench_dir.mkdir(exist_ok=True)
+    
+    out_path = bench_dir / "benchmark.json"
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(benchmark_data, f, ensure_ascii=False, indent=2)
+    print(f"Saved benchmark to {out_path}")
+else:
+    print(f"\n{errors} errors encountered. Please fix.")

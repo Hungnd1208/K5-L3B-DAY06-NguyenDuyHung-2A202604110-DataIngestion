@@ -1,0 +1,908 @@
+[
+  {
+    "question_id": "q01",
+    "split": "dev",
+    "question": "Khái niệm Machine Learning (Học máy) được định nghĩa như thế nào?",
+    "expected_answer": "Machine Learning là một nhánh của trí tuệ nhân tạo cho phép máy tính học từ dữ liệu và cải thiện hiệu suất theo thời gian mà không cần lập trình chi tiết cho từng nhiệm vụ cụ thể.",
+    "gold_page": 2,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p02_fixed_000",
+        "page": 2,
+        "chapter": "chuong_1",
+        "score": 0.8006057638703308,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "2\n\nCHƯƠNG 1: TỔNG QUAN VỀ DEEP LEARNING\n1.1 Khái niệm Machine Learning\nMachine Learning (ML) là một nhánh của trí tuệ nh..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p02_fixed_002",
+        "page": 2,
+        "chapter": "chuong_1",
+        "score": 0.7505119756633545,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "gán nhãn.\n• Học tăng cường (Reinforcement Learning): mô hình học thông qua quá\ntrình tương tác với môi trường.\nMachine L..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p02_fixed_001",
+        "page": 2,
+        "chapter": "chuong_1",
+        "score": 0.7104996697795688,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "dữ liệu đóng vai trò rất quan trọng. Thông qua quá trình\nhuấn luyện, mô hình có thể học được mối quan hệ giữa dữ liệu đầ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q02",
+    "split": "dev",
+    "question": "Mô hình Recurrent Neural Network (RNN) được thiết kế chuyên biệt để xử lý dạng dữ liệu nào?",
+    "expected_answer": "RNN được thiết kế để xử lý dữ liệu chuỗi như văn bản, âm thanh và dữ liệu thời gian.",
+    "gold_page": 4,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p04_fixed_000",
+        "page": 4,
+        "chapter": "chuong_1",
+        "score": 0.8020821734161314,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "4\n\n1.4.3 Recurrent Neural Network (RNN)\nRecurrent Neural Network là mô hình mạng nơ-ron được thiết kế để xử lý dữ liệu\nc..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p02_fixed_003",
+        "page": 2,
+        "chapter": "chuong_1",
+        "score": 0.6558865258596809,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ời trong\nviệc xử lý và học từ dữ liệu.\nĐiểm đặc trưng của Deep Learning là khả năng tự động học các đặc trưng từ dữ\nliệu..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p02_fixed_002",
+        "page": 2,
+        "chapter": "chuong_1",
+        "score": 0.651621532155206,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "gán nhãn.\n• Học tăng cường (Reinforcement Learning): mô hình học thông qua quá\ntrình tương tác với môi trường.\nMachine L..."
+      }
+    ]
+  },
+  {
+    "question_id": "q03",
+    "split": "dev",
+    "question": "Trong bài toán thị giác máy tính, phân loại ảnh (Image Classification) có nhiệm vụ gì?",
+    "expected_answer": "Xác định đối tượng chính trong ảnh là gì.",
+    "gold_page": 6,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p06_fixed_000",
+        "page": 6,
+        "chapter": "chuong_2",
+        "score": 0.7895434430644784,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "6\n\nThị giác máy tính là lĩnh vực ứng dụng rộng lớn nhất của CNN, đóng vai trò\n\"xương sống\" cho các hệ thống thông minh. ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p06_fixed_002",
+        "page": 6,
+        "chapter": "chuong_2",
+        "score": 0.7280430953476639,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "diện làn đường cho xe tự lái).\n\nHình 4 - So sánh các bài toán c ốt lõi trong Th ị giác máy tính: Phân lo ại ảnh\n(Classif..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p27_fixed_003",
+        "page": 27,
+        "chapter": "chuong_4",
+        "score": 0.7230551464945137,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "Hiệu quả cao trong các bài toán nhận dạng hình ảnh..."
+      }
+    ]
+  },
+  {
+    "question_id": "q04",
+    "split": "dev",
+    "question": "Hàm kích hoạt phổ biến nào trong CNN giúp tăng tốc độ huấn luyện và cải thiện hiệu suất của mạng?",
+    "expected_answer": "Hàm ReLU (Rectified Linear Unit).",
+    "gold_page": 8,
+    "filter": null,
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p09_fixed_002",
+        "page": 9,
+        "chapter": "chuong_3",
+        "score": 0.8188020252816869,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "Nếu không có hàm kích ho ạt, toàn bộ mạng nơ-\nron sẽ chỉ thực hiện các phép biến đổi tuyến tính và không thể giải quyết ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p11_fixed_000",
+        "page": 11,
+        "chapter": "chuong_3",
+        "score": 0.8172870569891344,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "11\n\n• Thường cho hiệu quả tốt hơn Sigmoid trong một số trường hợp.\nTuy nhiên, giống như Sigmoid, hàm Tanh cũng có thể gặ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p09_fixed_003",
+        "page": 9,
+        "chapter": "chuong_3",
+        "score": 0.7764647233407326,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ến trong Deep Learning bao gồm:\n3.3.1 ReLU (Rectified Linear Unit)\nRectified Linear Unit (ReLU) là hàm kích ho ạt được s..."
+      }
+    ]
+  },
+  {
+    "question_id": "q05",
+    "split": "dev",
+    "question": "Trong lớp tích chập, tham số Stride (Bước trượt) là gì và Stride lớn hơn 1 có tác dụng gì?",
+    "expected_answer": "Stride là khoảng cách di chuyển của kernel sau mỗi phép tính; Stride > 1 giúp giảm kích thước không gian của bản đồ đặc trưng.",
+    "gold_page": 9,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p09_fixed_000",
+        "page": 9,
+        "chapter": "chuong_3",
+        "score": 0.7945450623412379,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "9\n\n• Stride (Bước trượt): Khoảng cách di chuyển của kernel sau mỗi phép tính.\nStride >1 giúp gi ảm kích thước không gian..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p14_fixed_000",
+        "page": 14,
+        "chapter": "chuong_3",
+        "score": 0.7482781947679406,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "14\n\n3.4.2.Padding and Stride\nGiống như các l ớp tích chập, các lớp pooling cũng làm thay đ ổi kích thước\nđầu ra. Tương t..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p12_fixed_000",
+        "page": 12,
+        "chapter": "chuong_3",
+        "score": 0.7101010940515967,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "12\n\n3.4.1.Maximum Pooling and Average Pooling( gộp tối đa và gộp trung bình)\nGiống như các lớp tích chập, các toán tử po..."
+      }
+    ]
+  },
+  {
+    "question_id": "q06",
+    "split": "dev",
+    "question": "Hàm kích hoạt ReLU xử lý giá trị đầu vào nhỏ hơn hoặc bằng 0 như thế nào?",
+    "expected_answer": "Nếu giá trị đầu vào nhỏ hơn hoặc bằng 0 thì kết quả bằng 0.",
+    "gold_page": 10,
+    "filter": null,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p09_fixed_003",
+        "page": 9,
+        "chapter": "chuong_3",
+        "score": 0.7609204607640505,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ến trong Deep Learning bao gồm:\n3.3.1 ReLU (Rectified Linear Unit)\nRectified Linear Unit (ReLU) là hàm kích ho ạt được s..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p10_fixed_000",
+        "page": 10,
+        "chapter": "chuong_3",
+        "score": 0.7525075991536507,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "10\n\nĐiều này có nghĩa là:\n• Nếu giá trị đầu vào lớn hơn 0 thì kết quả giữ nguyên.\n• Nếu giá trị đầu vào nhỏ hơn hoặc bằn..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p25_fixed_001",
+        "page": 25,
+        "chapter": "chuong_3",
+        "score": 0.7522040213042376,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ation: Chuẩn hóa dữ liệu về phân phối chuẩn để kiểm soát\nbiên độ gradient.\nHiện tượng \"ReLU chết\" (Dead ReLU)\nMặc dù ReL..."
+      }
+    ]
+  },
+  {
+    "question_id": "q07",
+    "split": "dev",
+    "question": "Hàm kích hoạt Tanh có thể gặp phải vấn đề nghiêm trọng gì khi cấu trúc mạng quá sâu?",
+    "expected_answer": "Gặp vấn đề vanishing gradient (biến mất gradient) giống như hàm Sigmoid.",
+    "gold_page": 11,
+    "filter": null,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p10_fixed_002",
+        "page": 10,
+        "chapter": "chuong_3",
+        "score": 0.8073045176374989,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "trình huấn luyện mạng sâu trở nên khó khăn.\n3.3.3 Tanh\nHyperbolic tangent (Tanh) là m ột biến thể của hàm Sigmoid. Hàm n..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p11_fixed_000",
+        "page": 11,
+        "chapter": "chuong_3",
+        "score": 0.7382020757441384,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "11\n\n• Thường cho hiệu quả tốt hơn Sigmoid trong một số trường hợp.\nTuy nhiên, giống như Sigmoid, hàm Tanh cũng có thể gặ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p25_fixed_000",
+        "page": 25,
+        "chapter": "chuong_3",
+        "score": 0.7345515462551587,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "25\n\nTrong mạng Nơ-ron sâu, việc nhân liên tiếp các đạo hàm qua nhiều lớp gây\nra hai vấn đề chính:\n• Vanishing Gradient (..."
+      }
+    ]
+  },
+  {
+    "question_id": "q08",
+    "split": "dev",
+    "question": "Điểm khác biệt cơ bản giữa lớp Pooling và lớp Convolution về mặt tham số là gì?",
+    "expected_answer": "Lớp Pooling không có tham số để học trong quá trình huấn luyện.",
+    "gold_page": 21,
+    "filter": null,
+    "hit_at_1": false,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p12_fixed_001",
+        "page": 12,
+        "chapter": "chuong_3",
+        "score": 0.8065316795855046,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ớp pooling không có tham\nsố để học (không có kernel). Thay vào đó, pooling th ực hiện các phép toán c ố\nđịnh, thường là ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p11_fixed_001",
+        "page": 11,
+        "chapter": "chuong_3",
+        "score": 0.7903149600810202,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "rong các l ớp\nconvolution của CNN do hiệu suất tính toán cao và khả năng giảm hiện tượng mất\ngradient.\n\n3.4 Pooling Laye..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p21_fixed_000",
+        "page": 21,
+        "chapter": "chuong_3",
+        "score": 0.7785625556324576,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "21\n\nbộ. Mặc dù các l ớp này không có tham s ố để học, chúng vẫn phải tham gia vào\nquá trình lan truyền ngược để định hướ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q09",
+    "split": "dev",
+    "question": "Công thức tính toán đầu ra của một neuron trong lớp Fully Connected là gì?",
+    "expected_answer": "y = f(Wx + b), trong đó W là ma trận trọng số, x là vector đặc trưng đầu vào, b là bias.",
+    "gold_page": 17,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p17_fixed_000",
+        "page": 17,
+        "chapter": "chuong_3",
+        "score": 0.8537998969262223,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "17\n\nGiả sử đầu vào của lớp Fully Connected là một vector đặc trưng x = (x1, x2,\n..., xn). Mỗi neuron trong lớp FC tính t..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p16_fixed_003",
+        "page": 16,
+        "chapter": "chuong_3",
+        "score": 0.7585039432763008,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "utional Neural Network – CNN) là một trong những kiến trúc phổ biến\nnhất để xử lý dữ liệu hình ảnh, âm thanh và video. M..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p08_fixed_001",
+        "page": 8,
+        "chapter": "chuong_3",
+        "score": 0.7577335043820552,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ớp này là Max Pooling và Average Pooling.\n5. Fully Connected Layer (Lớp kết nối đầy đủ)\nSau khi d ữ liệu đã đư ợc trích ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q10",
+    "split": "dev",
+    "question": "Nhược điểm lớn nhất của lớp Fully Connected là gì?",
+    "expected_answer": "Số lượng tham số rất lớn, dễ gây overfitting và tốn bộ nhớ cũng như thời gian huấn luyện.",
+    "gold_page": 17,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p17_fixed_001",
+        "page": 17,
+        "chapter": "chuong_3",
+        "score": 0.8226257611685854,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "g ch ỉ trích xuất đặc trưng cục bộ\n(cạnh, góc, texture). L ớp Fully Connected có nhi ệm vụ tổng hợp các đ ặc trưng\nnày v..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p17_fixed_003",
+        "page": 17,
+        "chapter": "chuong_3",
+        "score": 0.7698911295335864,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "sử dụng để tổng hợp đặc trưng thay cho FC truyền thống.\n3.5.5.Kết luận\nLớp Fully Connected đóng vai trò quan tr ọng tron..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p16_fixed_003",
+        "page": 16,
+        "chapter": "chuong_3",
+        "score": 0.7501724297298534,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "utional Neural Network – CNN) là một trong những kiến trúc phổ biến\nnhất để xử lý dữ liệu hình ảnh, âm thanh và video. M..."
+      }
+    ]
+  },
+  {
+    "question_id": "q11",
+    "split": "dev",
+    "question": "Thuật toán lan truyền ngược (Backpropagation) dựa trên nguyên lý toán học nào từ giải tích để tính đạo hàm riêng?",
+    "expected_answer": "Ứng dụng có hệ thống của quy tắc chuỗi (chain rule).",
+    "gold_page": 18,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p18_fixed_000",
+        "page": 18,
+        "chapter": "chuong_3",
+        "score": 0.7792956657227084,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "18\n\n3.6 Thuật toán huấn luyện Backpropagation trong CNN\n3.6.1. Cơ sở toán học và cơ chế vận hành của thuật toán lan truy..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p18_fixed_002",
+        "page": 18,
+        "chapter": "chuong_3",
+        "score": 0.7540890257906329,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "o ra dự đoán và tính toán hàm mất mát L nhằm đánh giá sai lệch so\nvới thực tế. Ngay sau đó, thuật toán lan truyền ngược ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p19_fixed_000",
+        "page": 19,
+        "chapter": "chuong_3",
+        "score": 0.7371640331850134,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "19\n\nmột nút thực hiện phép toán f(x, y), và ta nh ận được Lz từ phía sau, thì gradient\nđối với x sẽ là Lx=Lz*zx. Sự phân..."
+      }
+    ]
+  },
+  {
+    "question_id": "q12",
+    "split": "dev",
+    "question": "Hiện tượng Vanishing Gradient xảy ra trong điều kiện nào khi nhân liên tiếp các đạo hàm qua nhiều lớp?",
+    "expected_answer": "Gradient tiến về 0 khi trị tuyệt đối của đạo hàm nhỏ hơn 1.",
+    "gold_page": 25,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p25_fixed_000",
+        "page": 25,
+        "chapter": "chuong_3",
+        "score": 0.7904994121538691,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "25\n\nTrong mạng Nơ-ron sâu, việc nhân liên tiếp các đạo hàm qua nhiều lớp gây\nra hai vấn đề chính:\n• Vanishing Gradient (..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p24_fixed_003",
+        "page": 24,
+        "chapter": "chuong_3",
+        "score": 0.7618666456163181,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "của thông tin.\nSự biến mất và Bùng nổ của Gradient..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p18_fixed_003",
+        "page": 18,
+        "chapter": "chuong_3",
+        "score": 0.7227153004794398,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "t đó đối với các đầu vào của nó, và gradient thượng\nnguồn (upstream gradient) nhận được từ các lớp phía sau. Tích của ha..."
+      }
+    ]
+  },
+  {
+    "question_id": "q13",
+    "split": "dev",
+    "question": "Trong Chương 3 về kiến trúc mô hình, thuật toán tối ưu Adam tích hợp cơ chế nào để bù đắp việc khởi tạo moment bằng 0?",
+    "expected_answer": "Cơ chế hiệu chỉnh độ lệch (bias correction).",
+    "gold_page": 23,
+    "filter": {
+      "chapter": "chuong_3"
+    },
+    "hit_at_1": false,
+    "evidence_hit_at_3": false,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p22_fixed_002",
+        "page": 22,
+        "chapter": "chuong_3",
+        "score": 0.7966715480385758,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "và hội tụ chậm. Để khắc phục, các kỹ thuật bổ trợ thường được dùng kèm:\n1. Momentum (Đ ộng lượng): Tích lũy v ận t ốc t ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p22_fixed_003",
+        "page": 22,
+        "chapter": "chuong_3",
+        "score": 0.7909422323296705,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "hóa \"tiêu chuẩn\" nhờ khả\nnăng tự điều chỉnh tốc độ học cho từng tham số riêng biệt. Adam kết hợp hai cơ\nchế: Momentum (t..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p22_fixed_004",
+        "page": 22,
+        "chapter": "chuong_3",
+        "score": 0.7799498123568799,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ể\ntỷ lệ hóa tốc độ học. Tham số nào có gradient biến động quá lớn sẽ bị \"hãm\"\nlại, tham số nào có gradient nhỏ/thưa sẽ đ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q14",
+    "split": "dev",
+    "question": "Trong Chương 4 về các kiến trúc nổi tiếng, mô hình AlexNet được đề xuất bởi những tác giả nào?",
+    "expected_answer": "Alex Krizhevsky, Ilya Sutskever và Geoffrey Hinton.",
+    "gold_page": 27,
+    "filter": {
+      "chapter": "chuong_4"
+    },
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p27_fixed_000",
+        "page": 27,
+        "chapter": "chuong_4",
+        "score": 0.8352247570239545,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "27\n\nMặc dù kiến trúc của LeNet khá đơn giản so với các mô hình hiện đại, nhưng\nnó đã đặt nền tảng quan trọng cho sự phát..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p27_fixed_001",
+        "page": 27,
+        "chapter": "chuong_4",
+        "score": 0.8052007325491523,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "t trội trong cu ộc thi ImageNet Large Scale\nVisual Recognition Challenge (ILSVRC) năm 2012 và đánh dấu sự bùng nổ của\nDe..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p26_fixed_001",
+        "page": 26,
+        "chapter": "chuong_4",
+        "score": 0.7830027551090514,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ng rào cản như biến mất gradient hay vùng cực tiểu phẳng\nchính là chìa khóa để cải thiện CNN.\n\nCHƯƠNG 4: MỘT SỐ KIẾN TRÚ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q15",
+    "split": "dev",
+    "question": "Mô hình VGGNet sử dụng kích thước bộ lọc (filter/kernel) nào làm đặc trưng nổi bật?",
+    "expected_answer": "Sử dụng các bộ lọc kích thước nhỏ (3×3) nhưng tăng số lượng lớp mạng lên rất sâu.",
+    "gold_page": 27,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p27_fixed_002",
+        "page": 27,
+        "chapter": "chuong_4",
+        "score": 0.8142353536047092,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "các mô hình Deep Learning.\n\n4.3 VGGNet\nVGGNet đư ợc phát tri ển b ởi Karen Simonyan và Andrew Zisserman t ại\nUniversity ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p08_fixed_004",
+        "page": 8,
+        "chapter": "chuong_3",
+        "score": 0.7229735094262837,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "3.2.1. Các tham số điều khiển\n• Kernel (Bộ lọc): Một ma trận trọng số nhỏ trượt qua dữ liệu. CNN sử dụng\ncơ chế chia sẻ ..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p27_fixed_001",
+        "page": 27,
+        "chapter": "chuong_4",
+        "score": 0.7161739961173901,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "t trội trong cu ộc thi ImageNet Large Scale\nVisual Recognition Challenge (ILSVRC) năm 2012 và đánh dấu sự bùng nổ của\nDe..."
+      }
+    ]
+  },
+  {
+    "question_id": "q16",
+    "split": "test",
+    "question": "Kiến trúc ResNet sử dụng giải pháp kỹ thuật nào để thông tin truyền qua nhiều lớp mà không bị suy giảm?",
+    "expected_answer": "Sử dụng skip connection (kết nối tắt).",
+    "gold_page": 28,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p28_fixed_002",
+        "page": 28,
+        "chapter": "chuong_4",
+        "score": 0.7935328244018922,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "Learning for Image\nRecognition.\nResNet được thiết kế để giải quyết vấn đề vanishing gradient khi mạng trở\nnên quá sâu. M..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p28_fixed_001",
+        "page": 28,
+        "chapter": "chuong_4",
+        "score": 0.7471703540533455,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "g. Điều này giúp mô hình có th ể trích xuất đặc trưng ở nhiều mức độ khác\nnhau.\nMột số đặc điểm chính của GoogLeNet:\n• S..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p29_fixed_000",
+        "page": 29,
+        "chapter": "chuong_5",
+        "score": 0.712325277656756,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "29\n\nResNet đã đ ạt thành tích r ất cao trong cu ộc thi ImageNet và tr ở thành một\ntrong những kiến trúc CNN được sử dụng..."
+      }
+    ]
+  },
+  {
+    "question_id": "q17",
+    "split": "test",
+    "question": "Trong Chương 4, mô hình GoogLeNet (Inception) được giới thiệu vào năm nào và bởi ai?",
+    "expected_answer": "Được giới thiệu bởi Christian Szegedy và cộng sự vào năm 2015 trong nghiên cứu Going Deeper with Convolutions.",
+    "gold_page": 28,
+    "filter": {
+      "chapter": "chuong_4"
+    },
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p28_fixed_000",
+        "page": 28,
+        "chapter": "chuong_4",
+        "score": 0.8489258501751973,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "28\n\n• Dễ dàng áp dụng trong nhiều hệ thống khác nhau\nTuy nhiên, VGGNet có số lượng tham số rất lớn nên yêu cầu tài nguyê..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p28_fixed_001",
+        "page": 28,
+        "chapter": "chuong_4",
+        "score": 0.787839756083618,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "g. Điều này giúp mô hình có th ể trích xuất đặc trưng ở nhiều mức độ khác\nnhau.\nMột số đặc điểm chính của GoogLeNet:\n• S..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p26_fixed_002",
+        "page": 26,
+        "chapter": "chuong_4",
+        "score": 0.7348713793142994,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "đó. Một số kiến trúc CNN nổi bật bao gồm LeNet, AlexNet, VGGNet, GoogLeNet\nvà ResNet.\n\n4.1 LeNet-5\nLeNet-5 là một trong ..."
+      }
+    ]
+  },
+  {
+    "question_id": "q18",
+    "split": "test",
+    "question": "Trong cơ chế lan truyền ngược của lớp Max Pooling, gradient được truyền như thế nào?",
+    "expected_answer": "Gradient được truyền 100% về vị trí của giá trị lớn nhất đã chọn; các vị trí khác nhận gradient bằng 0.",
+    "gold_page": 21,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p21_fixed_000",
+        "page": 21,
+        "chapter": "chuong_3",
+        "score": 0.833716810556867,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "21\n\nbộ. Mặc dù các l ớp này không có tham s ố để học, chúng vẫn phải tham gia vào\nquá trình lan truyền ngược để định hướ..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p21_fixed_001",
+        "page": 21,
+        "chapter": "chuong_3",
+        "score": 0.8103523918000075,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "c ửa\nsổ.\nGradient thư ợng ngu ồn đư ợc\nchia đều cho tất cả các phần tử trong\ncửa sổ (1/N, với N là kích thước cửa\nsổ).\nT..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p20_fixed_000",
+        "page": 20,
+        "chapter": "chuong_3",
+        "score": 0.8003604733017531,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "20\n\nĐiều này có nghĩa là l ớp tích ch ập sử dụng chính cơ ch ế vận hành c ủa nó\ntrong lượt truyền nghịch để tự điều chỉn..."
+      }
+    ]
+  },
+  {
+    "question_id": "q19",
+    "split": "test",
+    "question": "Ưu điểm quan trọng của CNN so với các phương pháp truyền thống trong việc trích xuất đặc trưng là gì?",
+    "expected_answer": "CNN có khả năng tự động học và trích xuất các đặc trưng quan trọng từ dữ liệu thông qua các lớp tích chập mà không cần thiết kế đặc trưng thủ công.",
+    "gold_page": 29,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p29_fixed_001",
+        "page": 29,
+        "chapter": "chuong_5",
+        "score": 0.8366754650467187,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "ệu một cách hiệu quả. Tuy nhiên, bên cạnh\nnhững ưu điểm nổi bật, mô hình này vẫn tồn tại một số hạn chế nhất định.\n5.1 Ư..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p29_fixed_002",
+        "page": 29,
+        "chapter": "chuong_5",
+        "score": 0.8313601002848944,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ưng quan trọng từ dữ liệu\nthông qua các lớp tích chập. Điều này giúp giảm công sức thiết kế đặc trưng và\ntăng độ chính x..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p03_fixed_003",
+        "page": 3,
+        "chapter": "chuong_1",
+        "score": 0.8034538545684988,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ữ\nliệu dạng hình ảnh. CNN sử dụng các phép tích chập để trích xuất đặc trưng từ dữ\nliệu...."
+      }
+    ]
+  },
+  {
+    "question_id": "q20",
+    "split": "test",
+    "question": "Tính chất 'hộp đen' (Black Box) của CNN gây ra trở ngại gì trong việc giải thích quyết định?",
+    "expected_answer": "Rất khó để giải thích chính xác cách mà mô hình đưa ra quyết định, gây khó khăn trong y tế hoặc tài chính.",
+    "gold_page": 30,
+    "filter": null,
+    "hit_at_1": true,
+    "evidence_hit_at_3": true,
+    "top_hits": [
+      {
+        "rank": 1,
+        "chunk_id": "bao-cao-cnn_p30_fixed_001",
+        "page": 30,
+        "chapter": "chuong_5",
+        "score": 0.7969203850151684,
+        "page_match": true,
+        "evidence_match": true,
+        "is_hit": true,
+        "text_snippet": "Thứ hai, chi phí tính toán cao. Các mô hình CNN thường có nhiều lớp và tham\nsố, do đó quá trình huấn luyện đòi hỏi tài n..."
+      },
+      {
+        "rank": 2,
+        "chunk_id": "bao-cao-cnn_p29_fixed_001",
+        "page": 29,
+        "chapter": "chuong_5",
+        "score": 0.6996863112402939,
+        "page_match": false,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "ệu một cách hiệu quả. Tuy nhiên, bên cạnh\nnhững ưu điểm nổi bật, mô hình này vẫn tồn tại một số hạn chế nhất định.\n5.1 Ư..."
+      },
+      {
+        "rank": 3,
+        "chunk_id": "bao-cao-cnn_p30_fixed_002",
+        "page": 30,
+        "chapter": "chuong_5",
+        "score": 0.6943007591308719,
+        "page_match": true,
+        "evidence_match": false,
+        "is_hit": false,
+        "text_snippet": "hình quá phức tạp hoặc dữ\nliệu huấn luyện không đủ đa dạng, CNN có thể học quá sát dữ liệu huấn luyện và\nhoạt động kém k..."
+      }
+    ]
+  }
+]
