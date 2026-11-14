@@ -1,0 +1,210 @@
+{
+  "source_id": "bao-cao-cnn",
+  "title": "Báo cáo lý thuyết Convolutional Neural Network (CNN)",
+  "source_path": "starter/data/BÁO CÁO LÝ THUYẾT CNN.pdf",
+  "license_or_permission": "Academic Research & Educational Use (Tài liệu học tập nội bộ VinUni Lab)",
+  "accessed_at": "2026-11-14",
+  "total_physical_pages": 32,
+  "total_content_pages": 31,
+  "content_page_range": "1-31",
+  "excluded_pages": [
+    32
+  ],
+  "exclusion_reason": "Trang 32 là danh mục tài liệu tham khảo (References)",
+  "total_content_characters": 46991,
+  "page_counting_rule": "Chỉ tính các trang có nội dung kiến thức chuyên môn lý thuyết (trang 1-31). Loại bỏ trang 32 chứa danh mục tài liệu tham khảo.",
+  "pages": [
+    {
+      "page_number": 1,
+      "char_count": 1752,
+      "is_content_page": true,
+      "chapter": "loi_mo_dau"
+    },
+    {
+      "page_number": 2,
+      "char_count": 1921,
+      "is_content_page": true,
+      "chapter": "chuong_1"
+    },
+    {
+      "page_number": 3,
+      "char_count": 1464,
+      "is_content_page": true,
+      "chapter": "chuong_1"
+    },
+    {
+      "page_number": 4,
+      "char_count": 1381,
+      "is_content_page": true,
+      "chapter": "chuong_1"
+    },
+    {
+      "page_number": 5,
+      "char_count": 935,
+      "is_content_page": true,
+      "chapter": "chuong_2"
+    },
+    {
+      "page_number": 6,
+      "char_count": 1333,
+      "is_content_page": true,
+      "chapter": "chuong_2"
+    },
+    {
+      "page_number": 7,
+      "char_count": 2080,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 8,
+      "char_count": 2211,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 9,
+      "char_count": 1577,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 10,
+      "char_count": 1210,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 11,
+      "char_count": 1925,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 12,
+      "char_count": 1810,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 13,
+      "char_count": 1091,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 14,
+      "char_count": 994,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 15,
+      "char_count": 875,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 16,
+      "char_count": 2065,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 17,
+      "char_count": 1908,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 18,
+      "char_count": 1587,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 19,
+      "char_count": 1037,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 20,
+      "char_count": 583,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 21,
+      "char_count": 1576,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 22,
+      "char_count": 2124,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 23,
+      "char_count": 1233,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 24,
+      "char_count": 1424,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 25,
+      "char_count": 1023,
+      "is_content_page": true,
+      "chapter": "chuong_3"
+    },
+    {
+      "page_number": 26,
+      "char_count": 1694,
+      "is_content_page": true,
+      "chapter": "chuong_4"
+    },
+    {
+      "page_number": 27,
+      "char_count": 1428,
+      "is_content_page": true,
+      "chapter": "chuong_4"
+    },
+    {
+      "page_number": 28,
+      "char_count": 1379,
+      "is_content_page": true,
+      "chapter": "chuong_4"
+    },
+    {
+      "page_number": 29,
+      "char_count": 1800,
+      "is_content_page": true,
+      "chapter": "chuong_5"
+    },
+    {
+      "page_number": 30,
+      "char_count": 1770,
+      "is_content_page": true,
+      "chapter": "chuong_5"
+    },
+    {
+      "page_number": 31,
+      "char_count": 1801,
+      "is_content_page": true,
+      "chapter": "ket_luan"
+    },
+    {
+      "page_number": 32,
+      "char_count": 491,
+      "is_content_page": false,
+      "chapter": "tai_lieu_tham_khao"
+    }
+  ]
+}

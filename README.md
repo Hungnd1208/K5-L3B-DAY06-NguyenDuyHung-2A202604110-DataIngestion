@@ -45,3 +45,40 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+
+---
+
+## 4. Hướng dẫn chạy và tái lập kết quả (Reproducibility Guide)
+
+### Bước 1: Khởi động cơ sở dữ liệu PostgreSQL + pgvector
+```bash
+cd starter
+# Khởi động container Postgres + pgvector cổng 55433
+docker compose -p day6_student_starter up -d --wait
+```
+
+### Bước 2: Thiết lập môi trường Python
+```bash
+# Kích hoạt môi trường ảo
+# Trên Windows PowerShell:
+.venv\Scripts\Activate.ps1
+# Cài đặt thư viện (nếu cần):
+pip install -r requirements.txt
+```
+
+### Bước 3: Cấu hình biến môi trường
+Tạo file `.env` trong thư mục `starter/` (hoặc copy từ `.env.example`):
+```env
+DATABASE_URL=postgresql://day6:day6_local_only@127.0.0.1:55433/day6_lab
+GEMINI_API_KEY=<your_gemini_api_key>
+```
+*(Lưu ý: Nếu không điền `GEMINI_API_KEY`, hệ thống sẽ tự động fallback sang mô hình cục bộ `all-MiniLM-L6-v2` hoàn toàn offline).*
+
+### Bước 4: Chạy toàn bộ Pipeline và Benchmark
+Từ thư mục `starter/`:
+```bash
+python -m src.run
+```
+Kết quả đo đạc Hit@1, Hit@3, Filter compliance và toàn bộ trace chi tiết sẽ được tự động xuất ra thư mục `results/`.
+Chi tiết phân tích và audit thủ công xem tại `report/individual/2A202604110_NguyenDuyHung.md` và `results/manual_audit.md`.
+
